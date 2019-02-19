@@ -1,6 +1,8 @@
 # Alpine Linux with OpenJDK JRE
 FROM maven:3-jdk-8
-#Build war
+# Add the working directory
+WORKDIR /
+#Build war file
 RUN mvn clean install
 # copy WAR into image
 COPY target/spring-boot-app-0.0.1-SNAPSHOT.war /app.war 
