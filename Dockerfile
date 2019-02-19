@@ -6,6 +6,8 @@ RUN pwd
 WORKDIR /opt/sonarqube
 #Build war file
 RUN mvn clean install --quiet
+RUN ls -l
+RUN pwd
 # copy WAR into image
 COPY target/spring-boot-app-0.0.1-SNAPSHOT.war /app.war 
 # run application with this command line 
