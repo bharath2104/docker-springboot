@@ -1,7 +1,7 @@
 # Alpine Linux with OpenJDK JRE
 FROM checkstyle/sonarqube-maven-git
 # Add the working directory
-ADD / /opt/sonarqube
+ADD / /opt/sonarqube/
 RUN pwd
 WORKDIR /opt/sonarqube
 #Build war file
