@@ -1,5 +1,5 @@
 # Alpine Linux with OpenJDK JRE
-FROM maven:3-jdk-8
+FROM checkstyle/sonarqube-maven-git
 # Add the working directory
 ADD / /
 #Build war file
