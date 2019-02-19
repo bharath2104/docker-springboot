@@ -1,7 +1,7 @@
 # Alpine Linux with OpenJDK JRE
 FROM maven:3-jdk-8
 # Add the working directory
-WORKDIR /
+ADD / /
 #Build war file
 RUN mvn clean install
 # copy WAR into image
