@@ -9,6 +9,6 @@ RUN mvn clean install --quiet
 RUN ls -l target/
 RUN pwd
 # copy WAR into image
-COPY target/spring-boot-app-0.0.1-SNAPSHOT.war /app.war 
+COPY /opt/sonarqube/target/spring-boot-app-0.0.1-SNAPSHOT.war /app.war 
 # run application with this command line 
 CMD ["/usr/bin/java", "-jar", "-Dspring.profiles.active=default", "/app.war"]
