@@ -2,6 +2,7 @@
 FROM checkstyle/sonarqube-maven-git
 # Add the working directory
 #ADD / /
+WORKDIR /opt/sonarqube
 #Build war file
 RUN mvn clean install
 # copy WAR into image
